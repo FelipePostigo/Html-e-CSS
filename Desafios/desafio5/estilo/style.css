@@ -6,7 +6,7 @@
 
 :root {
     --fonte1: 'Sriracha', cursive;
-    --fonte: 'Passion One', sans-serif;
+    --fonte2: 'Passion One', sans-serif;
 }
 
 * {
@@ -14,13 +14,59 @@
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header {
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 header > h1 {
-    font: bold 70px var(--fonte-titulo);
-    text-transform: uppercase;
+    padding-top: 50px;
+    font: small-caps bold 70px var(--fonte2);
 }
 
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 10vh 0 10vh 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
